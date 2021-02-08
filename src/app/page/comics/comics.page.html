@@ -23,17 +23,17 @@
   <ion-toolbar>
     <ion-buttons>
       <span [class.hide]="pageNumber===1">
-        <ion-button fill="solid" (click)="prevPage()" color="dark">
+        <ion-button fill="solid" (click)="prevPage()" color="light">
           <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
         </ion-button>
       </span>
    
-      <ion-button color="light">
+      <ion-button color="dark">
         Page <span class="current-page"  >{{ pageNumber }}  </span> of <span class="number-of-pages"> {{ pagesTotal }} </span>
       </ion-button>
   
       <span [class.hide]="pageNumber===pagesTotal">
-        <ion-button fill="solid" (click)="nextPage()" color="dark">
+        <ion-button fill="solid" (click)="nextPage()" color="light">
           <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
         </ion-button>
       </span>  

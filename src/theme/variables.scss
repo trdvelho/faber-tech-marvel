@@ -36,19 +36,6 @@ ion-content {
     }
   }
 
-  ion-list {
-    --ion-background-color: transparent !important;
-    ion-item {
-      --border-radius: 1px solid var(--marvel-main-red);
-      --ion-background-color: rgba(0,0,0,.5);
-      --color: #ffffff;
-      &:hover {
-        background-color: var(--marvel-main-red);
-        border-color: white;
-      }
-    }
-  }
-
   ion-card-header {
     margin-top: -5px;
     background: rgba(black, .7);
