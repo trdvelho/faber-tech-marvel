@@ -2,14 +2,11 @@
 
 ## Goal:
 
-``
-This project has been developed aiming to show my skills as Ionic Developer
-``
+This project named 'TV Marvel' (TV - stands for Thiago Velho) has been developed aiming to show my skills as an Ionic Developer
 
 ### What it does?
-``
+
 It allows the user to navigate through a list of MARVEL's characters and their comics 
-``
 
 ### How was it created?
 - Ionic 5
@@ -21,9 +18,9 @@ It allows the user to navigate through a list of MARVEL's characters and their c
 ### How to use it
 
 ```
-git clone https://github.com/trdvelho/faber-tech-marvel.git
-cd faber-tech-marvel
-npm i
-ionic cordova emulate android
+$ git clone https://github.com/trdvelho/faber-tech-marvel.git
+$ cd faber-tech-marvel
+$ npm i
+$ ionic serve -l
 ```
 
