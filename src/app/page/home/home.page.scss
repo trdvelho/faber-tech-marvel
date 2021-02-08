@@ -1,0 +1,19 @@
+ion-content {
+  --background:url('../../../assets/marvel-background.jpg') no-repeat center center / cover;
+  .home {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  
+    align-items: center;
+    
+  }
+
+  ion-button {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,21 @@
+<div *ngIf="item">
+  <div class="details-image">
+    <img src="{{ item?.thumbnail.path + '.' + item?.thumbnail.extension }}" />
+  </div>
+
+    <ion-card-header>
+      DESCRIPTION
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ (item.description ? item.description : 'NO DESCRIPTION AVAILABLE') }}
+      <p class="format" *ngIf="item?.format">
+        <b>Format:</b> {{ item.format? item.format : 'NOT AVAILABLE' }} | 
+        <b>Issue No.:</b> {{ item.issueNumber ? item.issueNumber : 'NOT AVAILABLE' }}
+      </p>
+
+      <p>
+        {{ item.description }}
+      </p>
+    </ion-card-content>
+</div>

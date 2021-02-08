@@ -1,0 +1,27 @@
+<tv-marvel-header [hasGoBack]="true" [headerTitle]="character?.name" (goBackButton)="goBack()" ></tv-marvel-header>
+
+<ion-content>
+
+  <div *ngIf="loading" class="container-loading">
+    <ion-spinner></ion-spinner>
+  </div>
+
+  <div *ngIf="character && !loading">
+    <div class="character">
+      <tv-show-details [item]="character" ></tv-show-details>
+    </div>
+  </div>
+
+  <div *ngIf="!character && !loading">
+    <br />
+    character not found
+  </div>  
+  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar *ngIf="character">
+    <ion-button color="dark" fill="solid" routerLink="/comics-character-in/{{ character.id }}">VIEW  {{character.name}}'S COMICS</ion-button>
+  </ion-toolbar>
+</ion-footer>

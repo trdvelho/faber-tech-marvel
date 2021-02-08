@@ -1,0 +1,42 @@
+<tv-marvel-header [hasGoBack]="true"
+                  [headerTitle]="(characterName ? characterName + '`s Comics' : '...')" 
+                  (goBackButton)="goBack()" >
+</tv-marvel-header>
+
+<ion-content>
+
+  <div *ngIf="loading" class="container-loading">
+    <ion-spinner></ion-spinner>
+  </div>
+
+  <div *ngIf="marvelData?.data?.results?.length > 0 && !loading"> 
+    <tv-marvel-list [arrayOfItems]="marvelData.data.results" ></tv-marvel-list> 
+  </div>
+
+  <div *ngIf="marvelData?.data?.results?.length == 0 && !loading" class="no-comics"> 
+    NO COMICS AVAILABLE
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons>
+      <span [class.hide]="pageNumber===1">
+        <ion-button fill="solid" (click)="prevPage()" color="dark">
+          <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </span>
+   
+      <ion-button color="light">
+        Page <span class="current-page"  >{{ pageNumber }}  </span> of <span class="number-of-pages"> {{ pagesTotal }} </span>
+      </ion-button>
+  
+      <span [class.hide]="pageNumber===pagesTotal">
+        <ion-button fill="solid" (click)="nextPage()" color="dark">
+          <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </span>  
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-footer>

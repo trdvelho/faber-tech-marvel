@@ -1,0 +1,24 @@
+.details-image {
+    img {
+        width:100%;
+    }
+}
+
+ion-card-header {
+    margin-top: -5px;
+    background: rgba(black, .7);
+    font-size: 25px;
+    color: white;
+    width: 100%;
+}
+ion-card-content {
+    background: rgba(black, .7);
+    --background: linear-gradient(180deg, var(--marvel-main-red), black);
+    font-size: 20px;
+    color: var(--marvel-main-red);
+
+    
+}
+.format {
+    background: rgba(white, .8);
+}

@@ -1,0 +1,7 @@
+{
+  "name": "faber-tech-test",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,9 @@
+<ion-list>
+  <ion-item *ngFor="let item of arrayOfItems" detail="false" routerLink="/{{ (item.name ? 'character' : 'comic') }}/{{ item.id }}">
+    <ion-avatar slot="start">
+      <img src="{{ item.thumbnail.path + '.' + item.thumbnail.extension }}" />
+    </ion-avatar>
+    <ion-label text-wrap>{{ item.name ? item.name : item.title }}</ion-label>
+  </ion-item>
+</ion-list>
+

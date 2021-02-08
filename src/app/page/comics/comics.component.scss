@@ -1,0 +1,9 @@
+ion-content {
+    .no-comics {
+        height: calc(100vh - 150px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
