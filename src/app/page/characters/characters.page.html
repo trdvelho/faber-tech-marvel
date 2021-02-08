@@ -15,17 +15,17 @@
   <ion-toolbar>
     <ion-buttons>
       <span [class.hide]="pageNumber===1">
-        <ion-button fill="solid" (click)="prevPage(searchInput.value)" color="light">
+        <ion-button fill="solid" (click)="prevPage(searchInput.value)" color="dark">
           <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
         </ion-button>
       </span>
    
-      <ion-button color="dark">
+      <ion-button color="light">
         Page <span class="current-page">{{ pageNumber }}</span>of<span class="number-of-pages"> {{ pagesTotal }} </span>
       </ion-button>
   
       <span [class.hide]="pageNumber===pagesTotal">
-        <ion-button fill="solid" (click)="nextPage(searchInput.value)" color="light">
+        <ion-button fill="solid" (click)="nextPage(searchInput.value)" color="dark">
           <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
         </ion-button>
       </span>  

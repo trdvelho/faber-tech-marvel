@@ -1,0 +1,11 @@
+ion-header {
+    ion-toolbar {
+        --color: #ffffff;
+        --background: linear-gradient(180deg, var(--marvel-main-red), black);
+        text-align: center
+    }
+    ion-title {
+      --color: #ffffff;
+      font-size:25px;
+    }
+}

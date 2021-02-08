@@ -9,18 +9,6 @@
   font-size:20px;
 }
 
-ion-header {
-  ion-toolbar {
-      --color: #ffffff;
-      --background: linear-gradient(180deg, var(--marvel-main-red), black);
-      text-align: center
-  }
-  ion-title {
-    --color: #ffffff;
-    font-size:20px;
-  }
-}
-
 ion-content {
   --background:url('../assets/marvel-c-background.jpg.jpg') no-repeat center center / cover;
 
