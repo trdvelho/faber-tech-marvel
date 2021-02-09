@@ -5,7 +5,9 @@ ion-header {
         text-align: center
     }
     ion-title {
-      --color: #ffffff;
-      font-size:25px;
+        width: auto;
+        --color: #ffffff;
+        font-size:22px;
+        text-align: center
     }
 }
